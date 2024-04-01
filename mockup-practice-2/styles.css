@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300..700&family=Righteous&display=swap');
+
+:root {
+    --first-color: #3e1e05;
+    --second-color: #693005;
+    --third-color: #965015;
+    --fourth-color: #c4913e;
+    --fith-color: #ccac85;
+    --reg-font: 'Quicksand'
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--reg-font);
+}
+
+.normal-nav {
+    color: white;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 20px 40px;
+    background-color: var(--fourth-color);
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-btn {
+    background-color: var(--third-color);
+    padding: 10px 20px;
+    white-space: nowrap;
+
+}
+
+.nav-logo {
+    margin-right: auto;
+}
+
+.nav-logo h2 {
+    font-family: 'Righteous';
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 3px #000000, 0px 0px 3px #000000, 0px 0px 3px #000000, 0px 0px 3px #000000, 0px 0px 3px #000000;
+    font-size: 45px;
+    white-space: nowrap;
+}
+
+.nav-logo h2 span {
+    font-family: 'Pacifico';
+    color: rgb(255, 43, 43);
+    font-size: 35px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.navbar .sidebar {
+    display: none;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: gray;
+    backdrop-filter: blur(10px);
+    padding: 40px 40px;
+    list-style: none;
+}
+
+.close-btn {
+    margin-left: auto;
+}
+
+@media (max-width:1200px) {
+    .nav-element {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+}
+
+@media (max-width:550px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+

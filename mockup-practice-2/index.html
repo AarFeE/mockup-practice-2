@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/892aefaa85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="normal-nav">
+                <li class="nav-logo">
+                    <h2>Café <span>Amanecer</span></h2>
+                </li>
+                <a class="nav-element" href="">
+                    <li class="nav-btn">About Us</li>
+                </a>
+                <a class="nav-element" href="">
+                    <li class="nav-btn">Reviews</li>
+                </a>
+                <a class="nav-element" href="">
+                    <li class="nav-btn">Our Team</li>
+                </a>
+                <a class="nav-element" href="">
+                    <li class="nav-btn">Frequent Customers</li>
+                </a>
+                <a class="nav-element" href="">
+                    <li class="nav-btn">Products</li>
+                </a>
+                <li class="menu-btn" onclick="showSidebar()"><i class="fa-solid fa-ellipsis""></i></li>
+            </ul>
+            <ul class="sidebar">
+                <li class="close-btn" onclick="hideSidebar()"><i class="fa-solid fa-xmark"></i></li>
+                <li>About Us</li>
+                <li>Reviews</li>
+                <li>Our Team</li>
+                <li>Frequent Customers</li>
+                <li>Products</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main"></main>
+    <footer class="footer"></footer>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = 'flex';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
