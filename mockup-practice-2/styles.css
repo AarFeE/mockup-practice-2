@@ -23,13 +23,16 @@ body {
 .title {
     font-family: 'Borel';
     color: var(--default-title-color);
+}
 
+.text-border {
+    text-shadow: 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000;
 }
 
 .header {
     position: relative;
     height: 125dvh;
-    background-image: url('src/header-bg.jpg');
+    background-image: url('src/header-content/header-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,7 +83,6 @@ body {
 .nav-logo h2 {
     font-family: 'Erica One';
     color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000;
     font-size: 40px;
     white-space: nowrap;
 }
@@ -131,7 +133,6 @@ body {
 
 .greetings .title {
     line-height: 75px;
-    text-shadow: 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000;
     font-size: 70px;
 }
 
@@ -140,21 +141,113 @@ body {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    text-shadow: 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .waves {
     position: absolute;
-    bottom: 0%;
+    bottom: -1%;
 }
 
 .waves path {
     background-color: #ffffff;
 }
 
+.about-n-reviews-bg {
+    background: linear-gradient(0deg, rgba(204,172,133,0) 0%, rgba(196,145,62,1) 100%), url('src/main-content/main-x-section-bg.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
 
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 60px 40px;
+}
+
+.about-us-text {
+    padding: 10px;
+    max-width: 600px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.about-us-text h3 {
+    font-size: 50px;
+}
+
+.about-us-text p {
+    font-size: 18px;
+}
+
+.about-us-img {
+    width: 800px;
+}
+
+.about-us-img img {
+    min-width: 330px;
+    width: 100%;
+    box-shadow: -7px 10px 19px -3px rgba(26,26,26,1);
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.about-us-img img:hover {
+    transform: scale(1.07);
+}
+
+.reviews-section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.reviews-section h3.title{
+    font-size: 50px;
+}
+
+.reviews {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.reviews-item {
+    flex: 0 0 30%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #693005c4;
+    min-width: 350px;
+    max-width: 400px;
+    box-shadow: 0px 10px 12px -1px rgba(0,0,0,0.75);
+}
+
+.reviews-item h4.title {
+    font-size: 24px;
+}
+
+.reviews-item p {
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+
+.review-img {
+    width: 200px;
+    margin: auto;
+}
+
+.review-img img {
+    width: 100%;
+}
 
 
 
