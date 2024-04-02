@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300..700&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&family=Erica+One&family=Quicksand:wght@300..700&family=Righteous&display=swap');
 
 :root {
     --first-color: #3e1e05;
@@ -19,15 +19,25 @@ body {
     font-family: var(--reg-font);
 }
 
+.header {
+    position: relative;
+    height: 125dvh;
+    background-image: url('src/header-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .normal-nav {
     color: white;
     display: flex;
-    gap: 40px;
+    gap: 30px;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
     padding: 20px 40px;
-    background-color: var(--fourth-color);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 40%);
 }
 
 .navbar ul a {
@@ -35,11 +45,22 @@ body {
     color: inherit;
 }
 
-.nav-btn {
-    background-color: var(--third-color);
+.nav-btn, .side-btn {
+    border: white solid 1px;
     padding: 10px 20px;
     white-space: nowrap;
+    transition: .4s all;
+}
 
+.nav-btn:hover, .side-btn:hover {
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+}
+
+.side-btn {
+    text-align: center;
+    width: 200px;
 }
 
 .nav-logo {
@@ -47,10 +68,10 @@ body {
 }
 
 .nav-logo h2 {
-    font-family: 'Righteous';
+    font-family: 'Erica One';
     color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 3px #000000, 0px 0px 3px #000000, 0px 0px 3px #000000, 0px 0px 3px #000000, 0px 0px 3px #000000;
-    font-size: 45px;
+    text-shadow: 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000;
+    font-size: 40px;
     white-space: nowrap;
 }
 
@@ -66,6 +87,7 @@ body {
 
 .navbar .sidebar {
     display: none;
+    z-index: 99;
     gap: 30px;
     justify-content: center;
     align-items: center;
@@ -74,15 +96,62 @@ body {
     position: absolute;
     top: 0%;
     right: 0%;
-    background-color: gray;
     backdrop-filter: blur(10px);
     padding: 40px 40px;
     list-style: none;
+    box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 40%);
 }
 
 .close-btn {
     margin-left: auto;
 }
+
+.greetings {
+    width: 90%;
+    padding: 5px;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.greetings h1 {
+    font-family: 'Borel';
+    color: rgb(255, 53, 53);
+    text-shadow: 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000;
+    font-size: 70px;
+}
+
+.greetings p  {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0%;
+}
+
+.waves path {
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
 
 @media (max-width:1200px) {
     .nav-element {
