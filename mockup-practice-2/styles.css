@@ -6,7 +6,8 @@
     --third-color: #965015;
     --fourth-color: #c4913e;
     --fith-color: #ccac85;
-    --reg-font: 'Quicksand'
+    --default-title-color: rgb(255, 53, 53);
+    --reg-font: 'Quicksand';
 }
 
 * {
@@ -19,6 +20,12 @@ body {
     font-family: var(--reg-font);
 }
 
+.title {
+    font-family: 'Borel';
+    color: var(--default-title-color);
+
+}
+
 .header {
     position: relative;
     height: 125dvh;
@@ -29,6 +36,9 @@ body {
 }
 
 .normal-nav {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
     color: white;
     display: flex;
     gap: 30px;
@@ -93,7 +103,7 @@ body {
     align-items: center;
     color: white;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 0%;
     right: 0%;
     backdrop-filter: blur(10px);
@@ -119,9 +129,8 @@ body {
     gap: 50px;
 }
 
-.greetings h1 {
-    font-family: 'Borel';
-    color: rgb(255, 53, 53);
+.greetings .title {
+    line-height: 75px;
     text-shadow: 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000, 0px 0px 2px #000000;
     font-size: 70px;
 }
