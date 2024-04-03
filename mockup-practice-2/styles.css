@@ -155,9 +155,12 @@ body {
 }
 
 .about-n-reviews-bg {
+    box-sizing: content-box;
+    position: relative;
     background: linear-gradient(0deg, rgba(204,172,133,0) 0%, rgba(196,145,62,1) 100%), url('src/main-content/main-x-section-bg.jpg') no-repeat center;
     background-size: cover;
     width: 100%;
+    min-height: 150dvh;
 }
 
 .about-us {
@@ -212,7 +215,7 @@ body {
 }
 
 .reviews {
-    padding: 20px;
+    padding: 20px 0 250px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -249,6 +252,10 @@ body {
     width: 100%;
 }
 
+.main-waves {
+    position: absolute;
+    bottom: 0%;
+}
 
 
 
