@@ -155,12 +155,10 @@ body {
 }
 
 .about-n-reviews-bg {
-    box-sizing: content-box;
     position: relative;
     background: linear-gradient(0deg, rgba(204,172,133,0) 0%, rgba(196,145,62,1) 100%), url('src/main-content/main-x-section-bg.jpg') no-repeat center;
     background-size: cover;
     width: 100%;
-    min-height: 150dvh;
 }
 
 .about-us {
@@ -215,7 +213,7 @@ body {
 }
 
 .reviews {
-    padding: 20px 0 250px;
+    padding: 60px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -253,11 +251,52 @@ body {
 }
 
 .main-waves {
-    position: absolute;
-    bottom: 0%;
+    position: relative;
+    transform: rotate(180deg);
+    bottom: -5px;
 }
 
 
+.our-team {
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(105, 48, 5, 0.349) 33%, rgb(62, 30, 5) 96%), url('https://www.gtjs.co.uk/wp-content/uploads/2017/03/coffee-shop-counter-1.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 80px;
+}
+
+.team-member {
+    flex-basis: 30%;
+    max-width: 400px;
+    min-width: 300px;
+    backdrop-filter: blur(20px);
+    color: white;
+    border: #301704 solid 2px;
+    box-shadow: 0px 10px 10px 3px rgba(48,23,4,1);
+    border-radius: 10px;
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 40px;
+}
+
+.team-member figure {
+    width: 100%;
+}
+
+.team-member figure img { 
+    width: 100%;
+}
+
+.team-member h5 {
+    font-size: 25px;
+}
 
 
 
